@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task.css"/>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/f612f4d575.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+`   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="menu_bar.css">
+    <title>Tasks</title>
+</head>
+<body>
+   
+        <!-------------sidebar-------------------------------------------------------->
+        <div id="my_Side_nav" class="side_nav">
+            <div class="top_div">
+                <img src="https://id.tmetric.com/images/tmetric_logo_and_text.svg" alt="">
+            </div>
+            <a href="javascript:void(0)" class="close_btn" onclick="closeNav()">&times;</a>
+    
+            <!-- All Menu contant  -->
+            <a href="time.html"> 
+                <img class="menu_bar_logo" src="https://www.flaticon.com/svg/static/icons/svg/3884/3884295.svg" alt="Time_logo">Time
+            </a>
+            <a href="task.html">
+                <img class="menu_bar_logo" src="https://www.flaticon.com/svg/static/icons/svg/839/839860.svg" alt="Task_logo"> Task
+            </a>
+    
+            <button class="dropdown1">Analyze
+                <i class="fas fa-angle-down"></i>
+            </button>
+    
+            <div class="dropdown-container">
+                <a href="#">
+                    <img class="menu_bar_logo" src="https://www.flaticon.com/svg/static/icons/svg/3094/3094929.svg" alt="Reports_logo"> Reports
+               </a>
+               <a href="activity.html">
+                    <img class="menu_bar_logo" src="https://www.flaticon.com/svg/static/icons/svg/3113/3113504.svg" alt="Activity_logo">Activity
+                </a>
+            </div>
+    
+            <button class="dropdown1">Manage
+                <i class="fas fa-angle-down"></i>
+            </button>
+    
+            <div class="dropdown-container">
+                <a href="Dashboard__project.html">
+                    <img class="menu_bar_logo" src="https://www.flaticon.com/svg/static/icons/svg/762/762631.svg" alt="Projects_logo">Projects
+                </a>
+                <a href="Dashboard__client.html" >
+                    <img class="menu_bar_logo" src="https://www.flaticon.com/premium-icon/icons/svg/2392/2392025.svg" alt="Clients_logo">Clients
+                </a>
+                <a href="Invoices.html" >
+                    <img class="menu_bar_logo" src="https://www.flaticon.com/premium-icon/icons/svg/2392/2392025.svg" alt="Clients_logo">Invoices
+                </a>
+                <a href="" >
+                    <img class="menu_bar_logo" src="https://www.flaticon.com/premium-icon/icons/svg/2392/2392025.svg" alt="Clients_logo">Time Off
+                </a>
+            </div>
+    
+            <button class="dropdown1">Workspace
+                <i class="fas fa-angle-down"></i>
+            </button>
+    
+            <div class="dropdown-container">
+                <a href="">
+                    <img class="menu_bar_logo" src="https://www.flaticon.com/svg/static/icons/svg/3964/3964443.svg" alt="Settimg_logo">Settings
+                </a>
+                <a href="">
+                    <img class="menu_bar_logo" src="https://www.flaticon.com/svg/static/icons/svg/1935/1935063.svg" alt="Member_logo">Members
+                </a>
+                <a href="">
+                    <img class="menu_bar_logo" src="https://www.flaticon.com/svg/static/icons/svg/1534/1534952.svg" alt="Teams">Teams
+                </a>
+                <a href="">
+                    <img class="menu_bar_logo" src="https://www.flaticon.com/svg/static/icons/svg/876/876770.svg" alt="time_logo">Tags
+                </a>
+                <a href="">
+                    <img class="menu_bar_logo" src="https://www.flaticon.com/svg/static/icons/svg/876/876770.svg" alt="time_logo">Intergrations
+                </a>
+            </div>
+            <a href="">
+                <img class="menu_bar_logo" src="data:image/png;base64,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" alt="Help">Help
+            </a>
+    
+            <div class="nav__logout__container">
+                <div class="nav__logout" onclick="openForm()">
+                    <div><img class="img" src="https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"/></div>
+                    <div>
+                        <div>My Company</div>
+                        <div>Your Name</div>
+                    </div>
+                    <div><i class="fas fa-angle-right"></i></div>
+                </div>
+            </div>
+            <!-- ---------PopUp form-----------------     -->
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                    <div>
+                        <p>My Profile</p>
+                    </div>
+                    <div>
+                        <p>WorkSpace</p>
+                        <p>My Company</p>
+                    </div>
+                    <div>
+                        <p>Manage Workspace</p>
+                    </div>
+                    <div>
+                        <a href="login_page.html">Logout <i class="fas fa-sign-out-alt"></i></a>
+                    </div>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+        </div>
+        <div class="navbar" onclick="openNav()"><i class="fas fa-bars fa-2x"></i></div>
+        <!-------------------------Ends-------------------------------------------------->
+        <div class="task">
+            <div class="task_navbar"></div>
+        
+            <div class="task_rightside">
+                <div class="task_header task_dropdown1">
+                    <h1>My Tasks</h1>
+                    <div class="task_verticle_line"></div>
+                    <button id="Select_assignee"  onclick="myFunction8()" class="Select_assignee">Select Assigne  <i class="fa fa-angle-down ml-1"></i> </button>
+                    <div id="task_myDropdown8" class="task_dropdown-content1 assignee">
+                        <a href="#">
+                        <input  class="client_dropdown" placeholder="Find user..."/>
+                        </a>
+                        <div class="creator_all_user">
+                            <img src="https://www.gravatar.com/avatar/c38574605ea2197456a247b0ce626f99?s=48&d=https%3A%2F%2Fservices.tmetric.com%2Fstorage%2FContent%2FAvatars%2Fuser-v2.png"/>
+                            <a href="#">All</a>
+                       </div>
+                   </div>
+               </div>
+               <div class="task_buttons task_dropdown1">
+                    <button id="client_all"  onclick="myFunction1()" class="task_buttons_all task_dropbtn1">Client : <span style="color:black">All  <i class="fa fa-angle-down ml-1"></i></span></button>
+                    <div id="task_myDropdown1" class="task_dropdown-content1">
+                        <a href="#">
+                            <input  class="client_dropdown" placeholder="Find client..."/>
+                        </a>
+                        <a href="#">No items</a>
+                    </div>
+                    <button id="project_all"  onclick="myFunction2()" class="task_buttons_all task_dropbtn1">Project : <span style="color:black">All  <i class="fa fa-angle-down ml-1"></i></span></button>
+                    <div id="task_myDropdown2" class="task_dropdown-content1 projectall">
+                        <a href="#">
+                            <input  class="client_dropdown" placeholder="Find project..."/>
+                        </a>
+                        <a href="#">No project</a>
+                    </div>
+                    <button id="tag_all" onclick="myFunction3()" class="task_buttons_all task_dropbtn1" >Tag : <span style="color:black">All  <i class="fa fa-angle-down ml-1"></i></span></button>
+                    <div id="task_myDropdown3" class="task_dropdown-content1 tagall">
+                        <a href="#">
+                            <input  class="client_dropdown" placeholder="Find Tag..."/>
+                        </a>
+                        <a href="#">No project</a>
+                        <a href="#">No work</a> 
+                    </div>
+                    <button id="status_all" onclick="myFunction4()" class="task_buttons_all task_dropbtn1">Status : <span style="color:black">All  <i class="fa fa-angle-down ml-1"></i></span></button>
+                        <div id="task_myDropdown4" class="task_dropdown-content1 statusall">
+                            <a href="#">Open</a>
+                            <a href="#">Completed</a> 
+                            <a href="#">All</a> 
+                        </div>
+                    <button id="creator_all" onclick="myFunction5()"  class="task_buttons_all task_dropbtn1">Creator : <span style="color:black">All  <i class="fa fa-angle-down ml-1"></i></span></button>
+                    <div id="task_myDropdown5" class="task_dropdown-content1 creatorall">
+                            <a href="#">
+                            <input  class="client_dropdown" placeholder="Find user..."/>
+                            </a>
+                            <div class="creator_all_user">
+                                <img src="https://www.gravatar.com/avatar/c38574605ea2197456a247b0ce626f99?s=48&d=https%3A%2F%2Fservices.tmetric.com%2Fstorage%2FContent%2FAvatars%2Fuser-v2.png"/>
+                            <a href="#">Any</a>
+                        </div>
+                    </div>
+                    <button id="source_all" onclick="myFunction6()"class="task_buttons_all task_dropbtn1">Source : <span style="color:black">All  <i class="fa fa-angle-down ml-1"></i></span></button>
+                    <div id="task_myDropdown6" class="task_dropdown-content1 sourceall">
+                        <a href="#">Internal</a>
+                        <a href="#">External</a> 
+                        <a href="#">All</a> 
+                    </div> 
+            </div>
+            <div class="New__task">
+                <div class="new__task">
+                    <button  id="New_task_button" class="new__task_btn">+ New Task</button>
+                    <button id="sort_project" onclick="myFunction7()" class="sort_project">Sort : <span style="color:black">Project  <i class="fa fa-angle-down ml-1"></i></span></button>
+                    <div id="task_myDropdown7" class="task_dropdown-content1 sortall">
+                        <a href="#">Project</a>
+                        <a href="#">Due Date</a> 
+                        <a href="#">Last Updated</a> 
+                        <a href="#">Newer First</a> 
+                        <a href="#">Older First</a> 
+                    </div> 
+                    <div class="search_bar">
+                        <i class="fa fa-search" id="search_icon"></i>
+                        <input id="search" class="New__task_search" placeholder="Search" type="text"></input>
+                    </div>
+                </div>
+                <hr>
+                <button class="project__lists" id="projectlist"> <i class="fa fa-angle-down ml-1"></i> No Project</button>
+                <div  class="task_input_field">
+                    <img class="task_right_icon" src="https://cdn1.vectorstock.com/i/thumb-large/59/25/check-mark-icon-isolated-on-white-background-vector-29005925.jpg" height="50px",width="35%"/>
+                <input id="New_task_Input" class="task_name" placeholder="Write a task name" type="text" />
+                <img class="task_person_icon"src="https://www.gravatar.com/avatar/c38574605ea2197456a247b0ce626f99?s=48&d=https%3A%2F%2Fservices.tmetric.com%2Fstorage%2FContent%2FAvatars%2Fuser-v2.png"/>
+             <img class="circle_input_field" src="data:image/png;base64,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"/>
+            </div>
+            <div id="taskList" class="tasklist">
+              
+            </div>
+            
+            </div>
+        
+        </div>
+
+   </div>
+        
+    
+    <script src="task.js"></script>  
+    <script src="time.js"></script>
+  </body>
+</html>
