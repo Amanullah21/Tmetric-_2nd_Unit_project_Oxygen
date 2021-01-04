@@ -114,7 +114,6 @@
  <ul>
  <li>Github : Amanullah21
  <li>Email : 1amanpce@gmail.com
- <li>
-  a herf="https://www.linkedin.com/in/md-amanullah-5b19a81b7">Linkdin:Md Amanullah</a>
+ <li>Linkdin:Md Amanullah</a>
  </ul>
 
