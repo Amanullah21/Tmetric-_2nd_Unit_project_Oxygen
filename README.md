@@ -13,14 +13,14 @@
 <li>Overview of TMetric.
 <li>TMetric offers time tracking service for freelancers and small business owners who want to optimize their business processes and increase personal productivity. TMetric tracks time spent on tasks and projects from your work flow.
 </ul>
- <img width="929" alt="Screenshot (640)" src="ReadMeImg1.PNG">
+ <img width="929" alt="Screenshot (640)" src="docs/ReadMeImg1.PNG">
  <img width="929" alt="Screenshot (640)" src="docs/ReadMeImg2.PNG">
- <img width="929" alt="Screenshot (640)" src="ReadMeImg3.PNG">
- <img width="929" alt="Screenshot (640)" src="ReadMeImg4.PNG">
- <img width="929" alt="Screenshot (640)" src="ReadMeImg5.PNG">
- <img width="929" alt="Screenshot (640)" src="ReadMeImg6.PNG">
- <img width="929" alt="Screenshot (640)" src="ReadMeImg7.PNG">
- <img width="929" alt="Screenshot (640)" src="ReadMeImg8.PNG">
+ <img width="929" alt="Screenshot (640)" src="docs/ReadMeImg3.PNG">
+ <img width="929" alt="Screenshot (640)" src="docs/ReadMeImg4.PNG">
+ <img width="929" alt="Screenshot (640)" src="docs/ReadMeImg5.PNG">
+ <img width="929" alt="Screenshot (640)" src="docs/ReadMeImg6.PNG">
+ <img width="929" alt="Screenshot (640)" src="docs/ReadMeImg7.PNG">
+ <img width="929" alt="Screenshot (640)" src="docs/ReadMeImg8.PNG">
  <h1></h1>
 
 ### Login - SignUp - page
