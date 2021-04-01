@@ -14,7 +14,7 @@
 <li>TMetric offers time tracking service for freelancers and small business owners who want to optimize their business processes and increase personal productivity. TMetric tracks time spent on tasks and projects from your work flow.
 </ul>
  <img width="929" alt="Screenshot (640)" src="ReadMeImg1.PNG">
- <img width="929" alt="Screenshot (640)" src="ReadMeImg2.PNG">
+ <img width="929" alt="Screenshot (640)" src="docs/ReadMeImg2.PNG">
  <img width="929" alt="Screenshot (640)" src="ReadMeImg3.PNG">
  <img width="929" alt="Screenshot (640)" src="ReadMeImg4.PNG">
  <img width="929" alt="Screenshot (640)" src="ReadMeImg5.PNG">
